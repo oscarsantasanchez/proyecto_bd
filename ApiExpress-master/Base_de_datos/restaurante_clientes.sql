@@ -36,7 +36,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-INSERT INTO `clientes` VALUES (1,'Juan','Perez'),(2,'Maria','Gomez'),(3,'Pedro','Gonzalez');
+INSERT INTO `clientes` VALUES (1,'Juan','Perez'),(2,'Maria','Gomez'),(3,'Pedro','Gonzalez'),(4,'Luis','Martinez'),(5,'Ana','Rodriguez'),(6,'Sofia','Hernandez'),(7,'Laura','Lopez'),(8,'Carlos','Sanchez'),(9,'Gabriela','Diaz'),(10,'Alejandro','Torres'),(11,'Fernanda','Garcia'),(12,'Ricardo','Ruiz'),(13,'Carmen','Alvarez'),(14,'Diego','Fernandez'),(15,'Valentina','Gutierrez'),(16,'Manuel','Ortega');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-02 13:08:01
+-- Dump completed on 2024-04-02 16:51:16

@@ -36,7 +36,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Cerveza',100),(2,'Vino',200),(3,'Gaseosa',50);
+INSERT INTO `productos` VALUES (1,'Cerveza',100),(2,'Vino',200),(3,'Gaseosa',50),(4,'Agua',1.5),(5,'Hamburguesa',8),(6,'Pizza',10),(7,'Refresco de cola',2.5),(8,'Refresco de naranja',2.5),(9,'Agua mineral',1.75),(10,'Jugo de naranja',2),(11,'Ensalada verde',4),(12,'Sopa de pollo',3.5),(13,'Spaghetti al pesto',7),(14,'Pollo a la parrilla',9),(15,'Filete de salmón',12),(16,'Tacos al pastor',6);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-02 13:08:02
+-- Dump completed on 2024-04-02 16:51:16
