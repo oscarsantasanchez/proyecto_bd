@@ -1,39 +1,33 @@
-var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var createError = require('http-errors');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var app = express();
 
-var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
+// Configurar el motor de vistas
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, 'views'));
 
-var UserController = require('./modules/user/user.module')().UserController;
-
+// Middleware
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-MongoDBUtil.init();
-
-app.use('/users', UserController);
-
+// Servir el archivo estático index.html
 app.get('/', function (req, res) {
-    var pkg = require(path.join(__dirname, 'package.json'));
-    res.json({
-        name: pkg.name,
-        version: pkg.version,
-        status: 'up'
-    });
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-// catch 404 and forward to error handler
+// Middleware para manejar errores 404
 app.use(function (req, res, next) {
     next(createError(404));
 });
 
-// error handler
+// Middleware para manejar otros errores
 app.use(function (err, req, res, next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
@@ -41,7 +35,6 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-
     res.json({
         message: res.locals.message,
         error: res.locals.error

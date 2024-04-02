@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurante XYZ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#order">Orden</a></li>
+            <li><a href="#customer">Cliente</a></li>
+            <li><a href="#table">Mesa</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li>Plato 1 - Precio</li>
+            <li>Plato 2 - Precio</li>
+            <!-- Agrega más elementos según el menú del restaurante -->
+        </ul>
+    </section>
+
+    <section id="order">
+        <h2>Orden</h2>
+        <form>
+            <label for="item">Ítem:</label>
+            <select id="item">
+                <option value="plato1">Plato 1</option>
+                <option value="plato2">Plato 2</option>
+                <!-- Agrega más opciones según el menú -->
+            </select>
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button type="submit">Agregar a la orden</button>
+        </form>
+    </section>
+
+    <section id="customer">
+        <h2>Cliente</h2>
+        <form>
+            <label for="customer-name">Nombre:</label>
+            <input type="text" id="customer-name">
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="table">
+        <h2>Mesa</h2>
+        <p>Seleccionar mesa:</p>
+        <select>
+            <option value="table1">Mesa 1</option>
+            <option value="table2">Mesa 2</option>
+            <!-- Agrega más opciones según las mesas disponibles -->
+        </select>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © Restaurante XYZ</p>
+    </footer>
+</body>
+</html>
