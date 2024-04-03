@@ -35,6 +35,7 @@ CREATE TABLE `menuproducto` (
 
 LOCK TABLES `menuproducto` WRITE;
 /*!40000 ALTER TABLE `menuproducto` DISABLE KEYS */;
+INSERT INTO `menuproducto` VALUES (1,5),(1,7),(1,9),(1,11),(1,21),(2,7),(2,10),(2,18),(2,20),(2,29),(3,9),(3,12),(3,16),(3,24),(3,28);
 /*!40000 ALTER TABLE `menuproducto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-02 13:08:01
+-- Dump completed on 2024-04-02 16:51:16
