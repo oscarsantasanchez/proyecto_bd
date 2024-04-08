@@ -1,5 +1,7 @@
 const Menu = require('../modules/Menu');
 const Productos = require('../modules/Productos');
+const ProductosDeCantabria = require('../modules/ProductosDeCantabria');
+
 
 exports.getMenu = async(req, res)=>{
     try {
@@ -16,6 +18,15 @@ exports.getProductos = async (req, res) => {
         res.render('productos', { productos });
     } catch (error) {
         console.log("Problemas al renderizar la página de productos");
+    }
+}
+
+exports.getProductosDeCantabria = async (req, res) => {
+    try {
+        const productosdecantabria = await Productos.find({esCantabro : true});
+        res.render('productosdecantabria', { productosdecantabria });
+    } catch (error) {
+        console.log("Problemas al renderizar la página de productos de Cantabria");
     }
 }
 

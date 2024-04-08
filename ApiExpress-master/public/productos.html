@@ -1,4 +1,3 @@
-<!-- En tu archivo de vista (por ejemplo, views/menu.ejs) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,14 @@
     <title>Productos</title>
 </head>
 <body>
+        <!-- Agrega el enlace para la vista "Productos de Cantabria" -->
     <h1>Productos</h1>
     <ul>
+        <a href="/productos/productosdecantabria">Productos de Cantabria</a>
         <% productos.forEach(producto => { %>
-            <li><%= producto.nombre %> - <%= producto.precio %></li> <!-- Muestra el nombre y precio del producto -->
+            <li><%= producto.nombre %>: <%= producto.precio %></li> <!-- Muestra el nombre y precio del producto -->
         <% }); %>
     </ul>
+    
 </body>
 </html>
