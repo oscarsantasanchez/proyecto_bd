@@ -1,51 +1,30 @@
-var createError = require('http-errors');
+// app.js
+
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+var routes = require('./routes');
+var mongoose = require('mongoose');
 
 var app = express();
 
-var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
+// Configurar el motor de vistas
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, './public'));
 
-var UserController = require('./modules/user/user.module')().UserController;
+//Conexión con MongoDB
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost:27017/ApiExpress')
+  .then(() => {})
+  .catch(() => {});
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-app.use(cookieParser());
+//Definir rutas de la aplicación   
+app.use('/', routes());
 
-MongoDBUtil.init();
-
-app.use('/users', UserController);
-
-app.get('/', function (req, res) {
-    var pkg = require(path.join(__dirname, 'package.json'));
-    res.json({
-        name: pkg.name,
-        version: pkg.version,
-        status: 'up'
-    });
-});
-
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    next(createError(404));
-});
-
-// error handler
-app.use(function (err, req, res, next) {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-    // render the error page
-    res.status(err.status || 500);
-
-    res.json({
-        message: res.locals.message,
-        error: res.locals.error
-    });
+// Middleware para manejar errores
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
 });
 
 module.exports = app;
