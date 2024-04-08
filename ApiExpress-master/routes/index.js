@@ -7,7 +7,13 @@ module.exports = () => {
 
     router.get('/menu', webController.getMenu);
 
+    router.get('/productos', webController.getProductos);
 
+    router.get('/menu/menu-del-dia', webController.getMenuDelDia);
+
+    router.get('/menu/menu-infantil', webController.getMenuInfantil);
+
+    router.get('/menu/plato-unico', webController.getPlatoUnico);
     
     return router;
 }
