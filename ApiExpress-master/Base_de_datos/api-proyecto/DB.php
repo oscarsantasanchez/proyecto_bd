@@ -9,8 +9,8 @@ class DB{
     public function __construct(){
        $this->host= 'localhost';
         $this->db= 'Restaurante';
-        $this->user= 'root';
-        $this->password ='27062004Anibal';
+        $this->user= 'ceesargaarcia';
+        $this->password ='cesar';
         //$this->charset = 'utf8mb4';*/
     }
     function connect(){

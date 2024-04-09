@@ -10,9 +10,13 @@ const productosSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-   
+    esDelDia: {
+        type: Boolean,
+    }, 
+    esCantabro: {
+        type: Boolean
+    }
 });
 
 // Definir el modelo de Productos utilizando el esquema definido
 module.exports = mongoose.model('Productos', productosSchema);
-

@@ -10,9 +10,8 @@ const productosdecantabriaSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-   
+
 });
 
 // Definir el modelo de Productos utilizando el esquema definido
 module.exports = mongoose.model('ProductosDeCantabriaSchema', productosdecantabriaSchema);
-
