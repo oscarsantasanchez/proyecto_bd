@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Proveedores</title>
+</head>
+<body>
+    <h1>Registro de Proveedores</h1>
+
+    <form id="proveedor-form">
+        <label for="nombre">Nombre del Proveedor:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="tipo_producto">Tipo de Producto:</label>
+        <input type="text" id="tipo_producto" name="tipo_producto" required><br><br>
+
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required><br><br>
+
+        <label for="calidad">Calidad:</label>
+        <select id="calidad" name="calidad" required>
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select><br><br>
+
+        <button type="submit">Agregar Proveedor</button>
+    </form>
+
+    <h2>Lista de Proveedores</h2>
+    <ul id="proveedores-list"></ul>
+
+    <script>
+        document.getElementById('proveedor-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nombre = document.getElementById('nombre').value;
+            var tipo_producto = document.getElementById('tipo_producto').value;
+            var ubicacion = document.getElementById('ubicacion').value;
+            var calidad = document.getElementById('calidad').value;
+
+            var proveedor = {
+                nombre: nombre,
+                tipo_producto: tipo_producto,
+                ubicacion: ubicacion,
+                calidad: calidad
+            };
+
+            var proveedoresList = document.getElementById('proveedores-list');
+
+            var listItem = document.createElement('li');
+            listItem.textContent = 'Nombre del proveedor: ' + proveedor.nombre + ', Tipo de Producto: ' + proveedor.tipo_producto + ', Ubicación: ' + proveedor.ubicacion + ', Calidad: ' + proveedor.calidad;
+            proveedoresList.appendChild(listItem);
+
+            document.getElementById('proveedor-form').reset();
+        });
+    </script>
+</body>
+</html>
