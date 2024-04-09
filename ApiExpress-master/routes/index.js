@@ -14,6 +14,9 @@ module.exports = () => {
     router.get('/menu/menu-infantil', webController.getMenuInfantil);
 
     router.get('/menu/plato-unico', webController.getPlatoUnico);
-    
+
+    router.get('/productos/productosdecantabria', webController.getProductosDeCantabria);
+
+    router.get('/contacto', webController.contacto);
     return router;
 }
