@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <!-- Agrega aquí tus estilos CSS si los tienes -->
+</head>
+<body>
+    <h1>Pedidos</h1>
+    
+    <!-- Aquí puedes iterar sobre la lista de pedidos y mostrar la información de cada uno -->
+    <ul>
+        <% pedidos.forEach(pedido => { %>
+            <li>ID: <%= pedido.id %></li>
+            <li>Nombre: <%= pedido.nombre %></li>
+            <li>Productos:</li>
+            <ul>
+                <% pedido.productos.forEach(producto => { %>
+                    <li>Nombre: <%= producto.nombre %></li>
+                    <!-- Agrega aquí más información sobre el producto si es necesario -->
+                <% }); %>
+            </ul>
+            <hr> <!-- Separador entre cada pedido -->
+        <% }); %>
+    </ul>
+
+    <!-- Puedes agregar más elementos HTML aquí según sea necesario -->
+
+</body>
+</html>
