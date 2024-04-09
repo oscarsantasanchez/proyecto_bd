@@ -4,7 +4,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "test": "mocha --recursive ./tests --watch ./modules"
   },
   "dependencies": {
@@ -21,9 +21,11 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
+    "daemon": "^1.1.0",
     "mocha": "^5.2.0",
     "mockgoose-fix": "^7.3.6",
     "node-mocks-http": "^1.7.0",
+    "nodemon": "^3.1.0",
     "sinon": "^6.1.4",
     "sinon-mongoose": "^2.2.1"
   }
