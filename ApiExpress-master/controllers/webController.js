@@ -2,6 +2,8 @@ const Menu = require('../modules/Menu');
 const Productos = require('../modules/Productos');
 const ProductosDeCantabria = require('../modules/ProductosDeCantabria');
 const Clientes = require('../modules/clientes');
+const Proveedores = require('../modules/Proveedores');
+
 exports.getMenu = async(req, res)=>{
     try {
         const menus = await Menu.find();
@@ -70,5 +72,14 @@ exports.getClientes = async (req, res) => {
     } catch (error) {
         console.log("Error al obtener los clientes:", error);
         res.status(500).send("Error al obtener los clientes");
-    }
+    }
+}
+
+exports.getProveedores = async (req, res) => {
+    try {
+        const proveedores = await Proveedores.find();
+        res.render('proveedores', { proveedores });
+    } catch (error) {
+        console.log("Problemas al renderizar la página de productos");
+    }
 }

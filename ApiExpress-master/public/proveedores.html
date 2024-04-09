@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+</head>
+<body>
+    <h1>Listado de Proveedores</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre del Proveedor</th>
+                <th>Tipo de Producto</th>
+                <th>Ubicación</th>
+                <th>Calidad del Producto</th>
+            </tr>
+        </thead>
+        <tbody id="proveedores">
+            <!-- Aquí se mostrarán los datos de los proveedores -->
+        </tbody>
+    </table>
+
+    <script>
+        // Datos de ejemplo de proveedores
+        const proveedores = [
+            {
+                nombre_proveedor: "Carnicería López",
+                tipo_producto: "Carne",
+                ubicacion: "Calle 1, Ciudad",
+                calidad_producto: "Alta"
+            },
+            {
+                nombre_proveedor: "Carnes Frescas S.A.",
+                tipo_producto: "Carne",
+                ubicacion: "Av. Principal, Ciudad",
+                calidad_producto: "Media"
+            },
+            // Agrega más objetos de proveedores según sea necesario
+        ];
+
+        // Obtener el elemento de la tabla donde se mostrarán los proveedores
+        const tablaProveedores = document.getElementById('proveedores');
+
+        // Recorrer los datos de los proveedores y mostrarlos en la tabla
+        proveedores.forEach(proveedor => {
+            const fila = document.createElement('tr');
+
+            const nombreProveedor = document.createElement('td');
+            nombreProveedor.textContent = proveedor.nombre_proveedor;
+
+            const tipoProducto = document.createElement('td');
+            tipoProducto.textContent = proveedor.tipo_producto;
+
+            const ubicacion = document.createElement('td');
+            ubicacion.textContent = proveedor.ubicacion;
+
+            const calidadProducto = document.createElement('td');
+            calidadProducto.textContent = proveedor.calidad_producto;
+
+            fila.appendChild(nombreProveedor);
+            fila.appendChild(tipoProducto);
+            fila.appendChild(ubicacion);
+            fila.appendChild(calidadProducto);
+
+            tablaProveedores.appendChild(fila);
+        });
+    </script>
+</body>
+</html>
