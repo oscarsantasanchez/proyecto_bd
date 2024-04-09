@@ -83,3 +83,7 @@ exports.getProveedores = async (req, res) => {
         console.log("Problemas al renderizar la página de productos");
     }
 }
+exports.getPostular = async (req, res) => {
+    res.render('postularseproveedor');
+
+}
