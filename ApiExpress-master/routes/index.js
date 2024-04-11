@@ -24,6 +24,8 @@ module.exports = () => {
     router.get('/proveedores', webController.getProveedores);
 
     router.get('/proveedores/postularseproveedor', webController.getPostular);
+	
+	router.get('/mesas', webController.getMesas);
 
 
     return router;

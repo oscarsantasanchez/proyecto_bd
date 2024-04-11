@@ -4,32 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Proveedores</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Registro de Proveedores</h1>
+    <div class="container">
+        <h1>Registro de Proveedores</h1>
 
-    <form id="proveedor-form">
-        <label for="nombre">Nombre del Proveedor:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+        <form id="proveedor-form">
+            <label for="nombre">Nombre del Proveedor:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
 
-        <label for="tipo_producto">Tipo de Producto:</label>
-        <input type="text" id="tipo_producto" name="tipo_producto" required><br><br>
+            <label for="tipo_producto">Tipo de Producto:</label>
+            <input type="text" id="tipo_producto" name="tipo_producto" required><br><br>
 
-        <label for="ubicacion">Ubicación:</label>
-        <input type="text" id="ubicacion" name="ubicacion" required><br><br>
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required><br><br>
 
-        <label for="calidad">Calidad:</label>
-        <select id="calidad" name="calidad" required>
-            <option value="Alta">Alta</option>
-            <option value="Media">Media</option>
-            <option value="Baja">Baja</option>
-        </select><br><br>
+            <label for="calidad">Calidad:</label>
+            <select id="calidad" name="calidad" required>
+                <option value="Alta">Alta</option>
+                <option value="Media">Media</option>
+                <option value="Baja">Baja</option>
+            </select><br><br>
 
-        <button type="submit">Agregar Proveedor</button>
-    </form>
+            <button type="submit">Agregar Proveedor</button>
+        </form>
 
-    <h2>Lista de Proveedores</h2>
-    <ul id="proveedores-list"></ul>
+        <h2>Lista de Proveedores</h2>
+        <ul id="proveedores-list"></ul>
+    </div>
 
     <script>
         document.getElementById('proveedor-form').addEventListener('submit', function(event) {

@@ -50,11 +50,23 @@
 <body>
     <div class="container">
         <h1>Menú del Día</h1>
-        <ul>
-            <% menuDelDia.forEach(producto => { %>
-                <li><%= producto.nombre %></li>
-            <% }); %>
-        </ul>
+<section>
+    <h2>Comida</h2>
+    <ul>
+        <% comida.forEach(producto => { %>
+            <li><%= producto.nombre %> - <%= producto.precio %></li>
+        <% }); %>
+    </ul>
+</section>
+
+<section>
+    <h2>Bebida</h2>
+    <ul>
+        <% bebida.forEach(producto => { %>
+            <li><%= producto.nombre %> - <%= producto.precio %></li>
+        <% }); %>
+    </ul>
+</section>
     </div>
 </body>
 </html>
