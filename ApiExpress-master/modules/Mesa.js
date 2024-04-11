@@ -1,15 +1,20 @@
 const fs = require('fs');
 
 const mongoose = require('mongoose');
-
-const menuSchema = new mongoose.Schema({
-    id: {
-        type: Number
+const mesaSchema = new mongoose.Schema({
+    numero: {
+        type: Number,
+        required: true,
+        unique: true
     },
-    cantidad: {
-        type: Number
+    capacidad: {
+        type: Number,
+        required: true
+    },
+    ocupada: {
+        type: Boolean,
+        default: false
     }
 });
 
-
-module.exports = mongoose.model('Mesa', menuSchema);
+module.exports = mongoose.model('Mesa', mesaSchema);
