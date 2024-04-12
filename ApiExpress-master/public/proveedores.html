@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Proveedores</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
         }
 
         .container {
             width: 80%;
             margin: 0 auto;
             background-color: #fff;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
@@ -25,11 +28,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            background-color: white;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 20px;
         }
 
         header h1 {
-            color: #333;
+            color: black;
         }
 
         nav ul {
@@ -48,11 +55,7 @@
             color: #333;
             font-weight: bold;
             transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ff5722;
-        }
+        } 
 
         body {
             font-family: Arial, sans-serif;
@@ -65,20 +68,23 @@
             width: 80%;
             margin: 0 auto;
             background-color: #fff;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            color: #333;
+            color:WHITE;
             margin-bottom: 20px;
+            font-family: 'Titulo2';
+
         }
 
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            margin-top: 20px;
+        
         }
         li {
             padding: 10px;
@@ -90,27 +96,43 @@
             transition: background-color 0.3s;
         }
 
-        li:hover {
-            background-color: #eaeaea;
+        .proveedor{
+            width: 50%;
+            float: left;
         }
+        @font-face {
+  font-family: 'Titulo';
+  src: url('fuente/campana.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Titulo2';
+  src: url('"C:\Users\MI PC\Desktop\TrabajoBases\proyecto_bd\ApiExpress-master\public\fuente\Lemands.otf"') format('opentype');
+}
+
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Productos De Cantabria</h1>
+            <h1>PROVEEDORES</h1>
             <nav>
                 <ul>
                     <li><a href="http://localhost:3000/">Inicio</a></li>
+                    <li><a href="/proveedores/postularseproveedor">Postularse a proveedor</a></li>
                     <li><a href="/contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="menu-item">
-                <ul>
-                    <% productosdecantabria.forEach(producto => { %>
-                        <li><%= producto.nombre %></li>
+            <section>
+                <ul >
+                    <% proveedores.forEach(proveedor => { %>
+                        <li class="proveedor">
+                            <strong>Nombre:</strong> <%= proveedor.nombre_proveedor %><br>
+                            <strong>Tipo de Producto:</strong> <%= proveedor.tipo_producto %><br>
+                            <strong>Ubicación:</strong> <%= proveedor.ubicacion %><br>
+                            <strong>Calidad:</strong> <%= proveedor.calidad_producto %>
+                        </li>
                     <% }); %>
                 </ul>
             </section>
