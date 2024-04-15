@@ -1,8 +1,10 @@
 const Menu = require('../modules/Menu');
 const Productos = require('../modules/Productos');
-const ProductosDeCantabria = require('../modules/ProductosDeCantabria');
 const Clientes = require('../modules/clientes');
 const Proveedores = require('../modules/Proveedores');
+const Pedidos = require('../modules/pedidos');
+const Mesa = require('../modules/Mesa');
+const Nosotros = require('../modules/nosotros');
 
 exports.getMenu = async(req, res)=>{
     try {
@@ -12,34 +14,6 @@ exports.getMenu = async(req, res)=>{
         console.log("Problemas al renderizar la pagina");
     }
 }
-exports.getMenuDelDia = async (req, res) => {
-    try {
-        const menuDelDia = await Productos.find({ esDelDia: true });
-        res.render('menu-Del-Dia', { menuDelDia });
-    } catch (error) {
-        console.log("Problemas al renderizar la página del menú del día:", error);
-        res.status(500).send("Error interno del servidor");
-    }
-};
-exports.getPlatoUnico = async (req, res) => {
-    try {
-        const platoUnico = await Productos.find({ esPlatoUnico: true });
-        res.render('plato-unico', { platoUnico });
-    } catch (error) {
-        console.log("Problemas al renderizar la página de plato único:", error);
-        res.status(500).send("Error interno del servidor");
-    }
-};
-
-exports.getMenuInfantil = async (req, res) => {
-    try {
-        const menuInfantil = await Productos.find({ esMenuInfantil: true });
-        res.render('menu-infantil', { menuInfantil });
-    } catch (error) {
-        console.log("Problemas al renderizar la página del menú infantil:", error);
-        res.status(500).send("Error interno del servidor");
-    }
-};
 
 exports.getProductos = async (req, res) => {
     try {
@@ -96,7 +70,7 @@ exports.getMesas = async (req, res) => {
         console.log("Problemas al renderizar la página de mesas:", error);
         res.status(500).send("Error interno del servidor");
     }
-};
+}
 
 exports.getMenuDelDia = async (req, res) => {
     try {
@@ -108,7 +82,7 @@ exports.getMenuDelDia = async (req, res) => {
         console.log("Problemas al renderizar la página del menú del día:", error);
         res.status(500).send("Error interno del servidor");
     }
-};
+}
 
 exports.getPlatoUnico = async (req, res) => {
     try {
@@ -120,7 +94,7 @@ exports.getPlatoUnico = async (req, res) => {
         console.log("Problemas al renderizar la página de plato único:", error);
         res.status(500).send("Error interno del servidor");
     }
-};
+}
 
 exports.getMenuInfantil = async (req, res) => {
     try {
@@ -132,4 +106,24 @@ exports.getMenuInfantil = async (req, res) => {
         console.log("Problemas al renderizar la página del menú infantil:", error);
         res.status(500).send("Error interno del servidor");
     }
+}
+
+exports.getNosotros = async (req, res) => {
+    try {
+        const informacionNosotros = await Nosotros.findOne(); // Utiliza el modelo Nosotros y el método findOne()
+        res.render('nosotros', { informacionNosotros });
+    } catch (error) {
+        console.log("Problemas al obtener la información sobre nosotros:", error);
+        res.status(500).send("Error interno del servidor");
+    }
+}
+
+exports.getPedidos = async (req, res) => {
+    try {
+        const pedidos = await Pedidos.find(); // Utiliza el modelo Pedidos y el método find()
+        res.render('pedidos', { pedidos });
+    } catch (error) {
+        console.log("Error al obtener los pedidos:", error);
+        res.status(500).send("Error al obtener los pedidos");
+    }
 };

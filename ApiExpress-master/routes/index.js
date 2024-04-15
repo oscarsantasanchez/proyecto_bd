@@ -27,6 +27,9 @@ module.exports = () => {
 	
 	router.get('/mesas', webController.getMesas);
 
+    router.get('/pedidos', webController.getPedidos);
+
+    router.get('/nosotros', webController.getNosotros);
 
     return router;
 }
