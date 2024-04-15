@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <!-- Agrega aquí tus estilos CSS si los tienes -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        main {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #666;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:3000">Inicio</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <div class="container">
+            <h1>Registro de Reseñas</h1>
+        
+            <form id="reseña-form">
+                <div style="margin-bottom: 15px;">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" style="width: 100%;" required>
+                </div>
+        
+                <div style="margin-bottom: 15px;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" style="width: 100%;" required>
+                </div>
+        
+                <div style="margin-bottom: 15px;">
+                    <label for="reseña">Reseña:</label><br>
+                    <textarea id="reseña" name="reseña" rows="4" cols="50" style="width: calc(100% - 10px);" required></textarea>
+                </div>
+        
+                <button type="submit" style="background-color: #4CAF50; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    transition-duration: 0.4s;
+                    cursor: pointer;
+                    border-radius: 20px;">Enviar Reseña</button>
+            </form>
+        
+            <h2>Reseñas añadidas</h2>
+            <ul id="reseñas-list"></ul>
+        
+            <script>
+                document.getElementById('reseña-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+        
+                    var id = document.getElementById('id').value;
+                    var nombre = document.getElementById('nombre').value;
+                    var reseña = document.getElementById('reseña').value;
+        
+                    var reseñaObj = {
+                        id: id,
+                        nombre: nombre,
+                        reseña: reseña
+                    };
+        
+                    var reseñasList = document.getElementById('reseñas-list');
+        
+                    var listItem = document.createElement('li');
+                    listItem.textContent = 'ID: ' + reseñaObj.id + ', Nombre: ' + reseñaObj.nombre + ', Reseña: ' + reseñaObj.reseña;
+                    reseñasList.appendChild(listItem);
+        
+                    document.getElementById('reseña-form').reset();
+                });
+            </script>
+        </div>
+        
+
+
+</body>
+
+</html>
