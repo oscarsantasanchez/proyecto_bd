@@ -32,6 +32,7 @@ exports.getProductosDeCantabria = async (req, res) => {
         console.log("Problemas al renderizar la página de productos de Cantabria");
     }
 }
+
 exports.home = (req, res) => {
     res.render('home');
 }
