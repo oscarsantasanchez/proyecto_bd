@@ -1,19 +1,41 @@
-# TRABAJO EXAMEN PARCIAL BASE DE DATOS
+# El Cantábrico
 
-Por este medio se orienta la actividad colaborativa "Api-Express", a partir de una plantilla dada por el profesor. La actividad consiste en:
+Bienvenido a la API Express de El Cantábrico. Esta API es parte del sistema de gestión del restaurante El Cantábrico, donde puedes explorar nuestra carta, productos y proveedores. Además, puedes leer y dejar opiniones de otros comensales, así como añadir tus propias reseñas.
 
-1) Crear  equipos de  4 estudiantes para el desarrollo de una api utilizando Express y MongoDb.
+## Requisitos previos
+- Node.js instalado en tu sistema. Puedes descargarlo desde [nodejs.org](https://nodejs.org/).
 
-2) Cada equipo debe tener su proyecto en GitHub para trabajar de forma colaborativa.
+## Cómo usar
 
-3) El proyecto debe utilizar las ramas de GitHub para conferir tareas a cada estudiante de forma individual. Dicho de otra forma, cada estudiante es responsable de una parte del proyecto y recibirá una nota por esa parte. La nota final será la media entre la nota colaborativa recibida por el proyecto y la nota individual del estudiante.
+1. Clona este repositorio o descarga la carpeta `ApiExpress-master`.
+2. Abre la terminal y navega hasta la carpeta `ApiExpress-master`.
+3. Instala las dependencias usando el siguiente comando:
 
-4) El proyecto debe incorporar todos los elementos dados en clases hasta el 27 de marzo. 
+   ```bash
+   npm install
 
-5) La nota principal se centrará en el trabajo con la base de datos, colecciones, agregaciones, índices, relaciones, etc
+4. Inicia el servidor local con el siguiente comando:
 
-6) Se valorará también la inclusión de elementos avanzados de desarrollo, como utilización de css en vistas, interfaces gráficas y otros elementos de desarrollo aprendidos en otras asignaturas. Este contenido integrador se valorará con dos puntos adicionales.
+   ````bash
+   npm start
 
-7) La entrega del proyecto se realizará por el campus virtual  mediante un documento  .txt que contenga el enlace al proyecto en GitHub de forma tal que el profesor tenga los accesos para revisarlo en la plataforma del equipo. 
+# Qué Ver en esta Página
 
-Esta es la metodología a seguir en este proyecto, correspondiente al examen parcial de la asignatura de Base de Datos II en la Universidad Europea del Atlántico.
+- **Explorar Menús y Productos**: Accede a nuestra carta y conoce los productos que ofrecemos en El Cantábrico.
+- **Realizar Pedidos a Domicilio**: ¡Haz tus pedidos desde la comodidad de tu hogar!
+- **Leer y Dejar Reseñas**: Descubre las opiniones de otros comensales y comparte tu experiencia dejando tu propia reseña.
+
+# Estructura del Proyecto
+
+- `/controllers`: Aquí se encuentra el controlador principal que maneja toda la lógica de la página.
+- `/models`: Contiene todos los esquemas de la base de datos donde se guarda la información.
+- `/public`: Contiene todas las páginas web que dan diseño a la aplicación.
+- `/routes`: Aquí se encuentra el archivo de rutas que se encarga de traer la data necesaria.
+- `/sql`: Contiene la base de datos correspondiente.
+
+# Contacto
+Si tiene alguna questión o sugerencia al respecto no dude en contactar con nosotros:
+- Cesar García Eguiguren (cesar.garcia@alumnos.uneatlantico.es)
+- David Garcia Costa (david.garcia1@alumnos.uneatlantico.es)
+- Anibal Bayas Galindo (anibal.bayas@alumnos.uneatlantico.es)
+- Oscar Santamaria Sanchez (oscar.santamaria@alumnos.uneatlantico.es)
