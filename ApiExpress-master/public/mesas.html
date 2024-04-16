@@ -66,7 +66,7 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
+            cursor: default; /* Cambia el cursor a predeterminado para evitar hacer clic */
         }
 
         section:hover {
@@ -97,7 +97,7 @@
         </header>
         <main>
             <% mesas.forEach(mesa => { %>
-                <section id="mesa<%= mesa.numero %>" onclick="window.location='/mesas/<%= mesa.numero %>';">
+                <section id="mesa<%= mesa.numero %>">
                     <h2>Mesa <%= mesa.numero %></h2>
                     <p>Capacidad: <%= mesa.capacidad %></p>
                     <p>Estado: <%= mesa.ocupada ? 'Ocupada' : 'Libre' %></p>
