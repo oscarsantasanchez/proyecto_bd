@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Bienvenido al Cantábrico!</title>
+    <title>El Cantábrico: Restaurante de la Costa</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <style>
         body {
@@ -34,9 +34,8 @@
         }
 
         header h1 {
-            font-family: 'Bebas Neue', sans-serif; /* Cambiando a la nueva fuente */
             color: #333;
-            font-size: 36px; /* Aumentando el tamaño del título */
+            font-size: 24px;
             font-weight: bold;
             margin: 0;
         }
@@ -113,17 +112,14 @@
             margin-bottom: 20px;
         }
 
-        @font-face {
-            font-family: 'Titulo';
-            src: url("C:\Users\MI PC\Desktop\TrabajoBases\proyecto_bd\ApiExpress-master\public\fuente\bebas_neue\BebasNeue-Regular.otf") format('opentype');
-        }
+       
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <img class="restaurante-img logo" src="http://www.elcantabricocomillas.es/wp-content/uploads/2015/07/restaurante_comillas_3.jpg" alt="Restaurante El Cantábrico" style="width: 30%;">
-            <h1 style="margin-right: 20px; text-align: center;">¡BIENVENIDO AL CANTÁBRICO!</h1> <!-- Centrando el título -->
+            <h1 style="margin-right: 20px;">El Cantábrico: Restaurante de la Costa</h1>
             <img class="restaurante-img logo" src="https://www.elcantabricocomillas.es/wp-content/uploads/2015/07/restaurante_comillas_5.jpg" alt="Restaurante El Cantábrico" style="width: 30%;">
         </header>
         
@@ -138,6 +134,10 @@
             </ul>
         </nav>
         <main>
+
+           
+            
+
             <section id="menu" onclick="window.location='/menu';">
                 <h2>Nuestros Menús</h2>
                 <ul>
@@ -147,17 +147,11 @@
                 </ul>
             </section>
 
-            <section id="clientes-mes" onclick="window.location='/clientesmes';">
-                <h2>Clientes del Mes</h2>
-                <p>¡Felicidades a nuestros clientes destacados!</p>
-                <!-- Aquí puedes listar los clientes destacados del mes -->
-            </section>
-
             <section id="productos" onclick="window.location='/productos';">
                 <h2>Nuestros Productos</h2>
-                <img class="productos-img" src="https://photo620x400.mnstatic.com/7600508a70fe3ec513e4366a48d0f46f/restaurante-el-cantabrico.jpg" alt="Productos" style="height: 230px;width: 33%;">
-                <img class="productos-img" src="https://media-cdn.tripadvisor.com/media/photo-s/13/e6/96/43/img-20180725-wa0044-largejpg.jpg" alt="Productos" style="height: 230px;width: 33%;">
-                <img class="productos-img" src="https://lh5.googleusercontent.com/p/AF1QipOIsxwzq2vysfY1Jq7yXqT0OIBvf8J9wxbXM1XF" alt="Productos" style="height: 230px;width: 33%;">
+                <img class="productos-img" src="https://photo620x400.mnstatic.com/7600508a70fe3ec513e4366a48d0f46f/restaurante-el-cantabrico.jpg" alt="Productos" style="height: 230px;width: 33%;";>
+                <img class="productos-img" src="https://media-cdn.tripadvisor.com/media/photo-s/13/e6/96/43/img-20180725-wa0044-largejpg.jpg" alt="Productos"style="height: 230px;width: 33%;">
+                <img class="productos-img" src="https://lh5.googleusercontent.com/p/AF1QipOIsxwzq2vysfY1Jq7yXqT0OIBvf8J9wxbXM1XF" alt="Productos"style="height: 230px;width: 33%;">
             </section>
 
             <section id="mesas" onclick="window.location='/mesas';">
@@ -167,8 +161,14 @@
 
             <section id="Proveedores" onclick="window.location='/proveedores';">
                 <h2>Nuestros Proveedores</h2>
-                <p>Pincha aqui para ver nuestros proveedores</p>
+                <p>Pincha aquí para ver nuestros proveedores</p>
                 <!-- Aquí puedes mostrar información sobre las mesas de tu restaurante -->
+            </section>
+
+            <section id="clientes-mes" onclick="window.location='/clientesmes';">
+                <h2>Opiniones y Valoraciones</h2>
+                <p>¡Felicidades a nuestros clientes destacados!</p>
+                <!-- Aquí puedes listar los clientes destacados del mes -->
             </section>
 
             <section id="Nosotros" onclick="window.location='/nosotros';">
@@ -176,7 +176,7 @@
                 <p>Pinchando aquí nos puede conocer y saber de nosotros</p>
                 <!-- Aquí puedes mostrar información sobre las mesas de tu restaurante -->
             </section>
+            
         </main>
     </div>
 </body>
-</html>
