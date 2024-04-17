@@ -22,6 +22,8 @@ module.exports = () => {
     router.get('/contacto', webController.contacto);
     
     router.get('/pedidos', webController.getPedidos);
+
+    router.get('/empleados', webController.getEmpleados);
 	
     router.get('/proveedores', webController.getProveedores);
 
