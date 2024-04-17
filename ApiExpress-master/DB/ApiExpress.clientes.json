@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c610"
+  },
+  "id": 1,
+  "nombre": "Juan",
+  "telefono": "5551234",
+  "frecuenciavisita": "semanal"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c611"
+  },
+  "id": 2,
+  "nombre": "Maria",
+  "telefono": "5555678",
+  "frecuenciavisita": "diaria"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c612"
+  },
+  "id": 3,
+  "nombre": "Pedro",
+  "telefono": "5559012",
+  "frecuenciavisita": "ocasional"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c613"
+  },
+  "id": 4,
+  "nombre": "Luis",
+  "telefono": "5553456",
+  "frecuenciavisita": "mensual"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c614"
+  },
+  "id": 5,
+  "nombre": "Ana",
+  "telefono": "5557890",
+  "frecuenciavisita": "ocasional"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c615"
+  },
+  "id": 6,
+  "nombre": "Sofia",
+  "telefono": "5552345",
+  "frecuenciavisita": "semanal"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c616"
+  },
+  "id": 7,
+  "nombre": "Laura",
+  "telefono": "5556789",
+  "frecuenciavisita": "diaria"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c617"
+  },
+  "id": 8,
+  "nombre": "Carlos",
+  "telefono": "5550123",
+  "frecuenciavisita": "mensual"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c618"
+  },
+  "id": 9,
+  "nombre": "Gabriela",
+  "telefono": "5554567",
+  "frecuenciavisita": "ocasional"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c619"
+  },
+  "id": 10,
+  "nombre": "Alejandro",
+  "telefono": "5558901",
+  "frecuenciavisita": "semanal"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c61a"
+  },
+  "id": 11,
+  "nombre": "Fernanda",
+  "telefono": "5552345",
+  "frecuenciavisita": "diaria"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c61b"
+  },
+  "id": 12,
+  "nombre": "Ricardo",
+  "telefono": "5556789",
+  "frecuenciavisita": "ocasional"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c61c"
+  },
+  "id": 13,
+  "nombre": "Carmen",
+  "telefono": "5550123",
+  "frecuenciavisita": "mensual"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c61d"
+  },
+  "id": 14,
+  "nombre": "Diego",
+  "telefono": "5554567",
+  "frecuenciavisita": "ocasional"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c61e"
+  },
+  "id": 15,
+  "nombre": "Valentina",
+  "telefono": "5558901",
+  "frecuenciavisita": "semanal"
+},
+{
+  "_id": {
+    "$oid": "66165b5caf0c15cae2a5c61f"
+  },
+  "id": 16,
+  "nombre": "Manuel",
+  "telefono": "5552345",
+  "frecuenciavisita": "diaria"
+}]

@@ -1,0 +1,1400 @@
+[{
+  "_id": {
+    "$oid": "661403c49718800b5bd909d5"
+  },
+  "id": 1,
+  "nombre": "Cerveza",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909d6"
+  },
+  "id": 2,
+  "nombre": "Vino",
+  "precio": 10,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909d7"
+  },
+  "id": 3,
+  "nombre": "Gaseosa",
+  "precio": 2,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909d8"
+  },
+  "id": 4,
+  "nombre": "Agua",
+  "precio": 1.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909d9"
+  },
+  "id": 5,
+  "nombre": "Hamburguesa",
+  "precio": 8,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "tipo": "comida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909da"
+  },
+  "id": 6,
+  "nombre": "Pizza",
+  "precio": 10,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "comida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909db"
+  },
+  "id": 7,
+  "nombre": "Refresco de cola",
+  "precio": 2.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909dc"
+  },
+  "id": 8,
+  "nombre": "Refresco de naranja",
+  "precio": 2.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909dd"
+  },
+  "id": 9,
+  "nombre": "Agua mineral",
+  "precio": 1.75,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909de"
+  },
+  "id": 10,
+  "nombre": "Jugo de naranja",
+  "precio": 2,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "tipo": "bebida",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909df"
+  },
+  "id": 11,
+  "nombre": "Ensalada verde",
+  "precio": 4,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e0"
+  },
+  "id": 12,
+  "nombre": "Sopa de pollo",
+  "precio": 3.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e1"
+  },
+  "id": 13,
+  "nombre": "Spaghetti al pesto",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e2"
+  },
+  "id": 14,
+  "nombre": "Pollo a la parrilla",
+  "precio": 9,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e3"
+  },
+  "id": 15,
+  "nombre": "Filete de salmón",
+  "precio": 12,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e4"
+  },
+  "id": 16,
+  "nombre": "Tacos al pastor",
+  "precio": 6,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e5"
+  },
+  "id": 17,
+  "nombre": "Burrito de carne asada",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e6"
+  },
+  "id": 18,
+  "nombre": "Papas fritas",
+  "precio": 3,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e7"
+  },
+  "id": 19,
+  "nombre": "Tarta de queso",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e8"
+  },
+  "id": 20,
+  "nombre": "Brownie con helado",
+  "precio": 6,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909e9"
+  },
+  "id": 21,
+  "nombre": "Café americano",
+  "precio": 2,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909ea"
+  },
+  "id": 22,
+  "nombre": "Café expreso",
+  "precio": 2.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909eb"
+  },
+  "id": 23,
+  "nombre": "Té verde",
+  "precio": 2,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909ec"
+  },
+  "id": 24,
+  "nombre": "Mojito",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909ed"
+  },
+  "id": 25,
+  "nombre": "Margarita",
+  "precio": 8,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909ee"
+  },
+  "id": 26,
+  "nombre": "Piña colada",
+  "precio": 8.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909ef"
+  },
+  "id": 27,
+  "nombre": "Mojito sin alcohol",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f0"
+  },
+  "id": 28,
+  "nombre": "Cóctel de frutas",
+  "precio": 4,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f1"
+  },
+  "id": 29,
+  "nombre": "Smoothie de fresa",
+  "precio": 3.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f2"
+  },
+  "id": 30,
+  "nombre": "Batido de chocolate",
+  "precio": 4.5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f3"
+  },
+  "id": 31,
+  "nombre": "Jamón ibérico",
+  "precio": 15,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f4"
+  },
+  "id": 32,
+  "nombre": "Paella",
+  "precio": 12,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f5"
+  },
+  "id": 33,
+  "nombre": "Tortilla española",
+  "precio": 6,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f6"
+  },
+  "id": 34,
+  "nombre": "Gazpacho",
+  "precio": 4,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f7"
+  },
+  "id": 35,
+  "nombre": "Pulpo a la gallega",
+  "precio": 14,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f8"
+  },
+  "id": 36,
+  "nombre": "Patatas bravas",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909f9"
+  },
+  "id": 37,
+  "nombre": "Churros con chocolate",
+  "precio": 4,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909fa"
+  },
+  "id": 38,
+  "nombre": "Fabada asturiana",
+  "precio": 10,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909fb"
+  },
+  "id": 39,
+  "nombre": "Sangría",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909fc"
+  },
+  "id": 40,
+  "nombre": "Tarta de Santiago",
+  "precio": 8,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909fd"
+  },
+  "id": 41,
+  "nombre": "Crema catalana",
+  "precio": 6,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909fe"
+  },
+  "id": 42,
+  "nombre": "Croquetas de jamón",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd909ff"
+  },
+  "id": 43,
+  "nombre": "Mariscada",
+  "precio": 20,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a00"
+  },
+  "id": 44,
+  "nombre": "Calamares a la romana",
+  "precio": 9,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a01"
+  },
+  "id": 45,
+  "nombre": "Pisto",
+  "precio": 6,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a02"
+  },
+  "id": 46,
+  "nombre": "Rabo de toro",
+  "precio": 16,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a03"
+  },
+  "id": 47,
+  "nombre": "Pimientos de padrón",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a04"
+  },
+  "id": 48,
+  "nombre": "Pescado frito",
+  "precio": 10,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a05"
+  },
+  "id": 49,
+  "nombre": "Turrón",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a06"
+  },
+  "id": 50,
+  "nombre": "Queso manchego",
+  "precio": 8,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a07"
+  },
+  "id": 51,
+  "nombre": "Rabas",
+  "precio": 12,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a08"
+  },
+  "id": 52,
+  "nombre": "Cocido montañés",
+  "precio": 11,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a09"
+  },
+  "id": 53,
+  "nombre": "Quesada pasiega",
+  "precio": 9,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a0a"
+  },
+  "id": 54,
+  "nombre": "Sobaos pasiegos",
+  "precio": 6,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a0b"
+  },
+  "id": 55,
+  "nombre": "Anchoas de Cantabria",
+  "precio": 13,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a0c"
+  },
+  "id": 56,
+  "nombre": "Bonito del norte en conserva",
+  "precio": 8,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a0d"
+  },
+  "id": 57,
+  "nombre": "Orujo de Liébana",
+  "precio": 10,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a0e"
+  },
+  "id": 58,
+  "nombre": "Sobao Joselín",
+  "precio": 7,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a0f"
+  },
+  "id": 59,
+  "nombre": "Caracoles de Cantabria",
+  "precio": 15,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a10"
+  },
+  "id": 60,
+  "nombre": "Queso picón de Tresviso",
+  "precio": 14,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a11"
+  },
+  "id": 61,
+  "nombre": "Cecina de ciervo",
+  "precio": 18,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a12"
+  },
+  "id": 62,
+  "nombre": "Sidra cántabra",
+  "precio": 6,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a13"
+  },
+  "id": 63,
+  "nombre": "Miénteme",
+  "precio": 4,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a14"
+  },
+  "id": 64,
+  "nombre": "Truchas a la pasiega",
+  "precio": 10,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a15"
+  },
+  "id": 65,
+  "nombre": "Tarta de hojaldre de Torrelavega",
+  "precio": 9,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a16"
+  },
+  "id": 66,
+  "nombre": "Anchoas de Laredo",
+  "precio": 12,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a17"
+  },
+  "id": 67,
+  "nombre": "Cachopo cántabro",
+  "precio": 16,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a18"
+  },
+  "id": 68,
+  "nombre": "Roscos de anís",
+  "precio": 5,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a19"
+  },
+  "id": 69,
+  "nombre": "Orujo de hierbas",
+  "precio": 11,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a1a"
+  },
+  "id": 70,
+  "nombre": "Revuelto de erizos de mar",
+  "precio": 20,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a1b"
+  },
+  "id": 71,
+  "nombre": "Carne guisada con patatas",
+  "precio": 14,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a1c"
+  },
+  "id": 72,
+  "nombre": "Empanada de carne",
+  "precio": 8,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a1d"
+  },
+  "id": 73,
+  "nombre": "Croquetas de cocido",
+  "precio": 7,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a1e"
+  },
+  "id": 74,
+  "nombre": "Bocartes fritos",
+  "precio": 11,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a1f"
+  },
+  "id": 75,
+  "nombre": "Sorropotún",
+  "precio": 13,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a20"
+  },
+  "id": 76,
+  "nombre": "Queso de Nata",
+  "precio": 12,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a21"
+  },
+  "id": 77,
+  "nombre": "Empanadillas de Bonito",
+  "precio": 9,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a22"
+  },
+  "id": 78,
+  "nombre": "Caracoles a la montañesa",
+  "precio": 15,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a23"
+  },
+  "id": 79,
+  "nombre": "Morcilla de Burgos",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a24"
+  },
+  "id": 80,
+  "nombre": "Tarta de queso de Camaleño",
+  "precio": 10,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a25"
+  },
+  "id": 81,
+  "nombre": "Sobrassada",
+  "precio": 9,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a26"
+  },
+  "id": 82,
+  "nombre": "Pimiento relleno de marisco",
+  "precio": 18,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a27"
+  },
+  "id": 83,
+  "nombre": "Tarta de nuez de Valderredible",
+  "precio": 11,
+  "esCantabro": true,
+  "esDelDia": true,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a28"
+  },
+  "id": 84,
+  "nombre": "Cocido Lebaniego",
+  "precio": 12,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a29"
+  },
+  "id": 85,
+  "nombre": "Bonito encebollado",
+  "precio": 14,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a2a"
+  },
+  "id": 86,
+  "nombre": "Sopa de pescado de Santoña",
+  "precio": 11,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a2b"
+  },
+  "id": 87,
+  "nombre": "Roscón de Reyes",
+  "precio": 8,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a2c"
+  },
+  "id": 88,
+  "nombre": "Leche frita",
+  "precio": 7,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a2d"
+  },
+  "id": 89,
+  "nombre": "Escalopines al Cabrales",
+  "precio": 16,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a2e"
+  },
+  "id": 90,
+  "nombre": "Cochinillo asado",
+  "precio": 20,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": true,
+  "esMenuInfantil": false,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a2f"
+  },
+  "id": 91,
+  "nombre": "Cachopín",
+  "precio": 13,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a30"
+  },
+  "id": 92,
+  "nombre": "Calamares en su tinta",
+  "precio": 15,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a31"
+  },
+  "id": 93,
+  "nombre": "Leche merengada",
+  "precio": 5,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "bebida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a32"
+  },
+  "id": 94,
+  "nombre": "Chipirones en su tinta",
+  "precio": 14,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a33"
+  },
+  "id": 95,
+  "nombre": "Bizcocho borracho",
+  "precio": 8,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a34"
+  },
+  "id": 96,
+  "nombre": "Rabo de toro",
+  "precio": 18,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a35"
+  },
+  "id": 97,
+  "nombre": "Rabo de vaca estofado",
+  "precio": 17,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a36"
+  },
+  "id": 98,
+  "nombre": "Guiso de jabalí",
+  "precio": 19,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a37"
+  },
+  "id": 99,
+  "nombre": "Guiso de venado",
+  "precio": 20,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+},
+{
+  "_id": {
+    "$oid": "661403c49718800b5bd90a38"
+  },
+  "id": 100,
+  "nombre": "Bacalao al pil pil",
+  "precio": 16,
+  "esCantabro": false,
+  "esDelDia": null,
+  "esPlatoUnico": false,
+  "esMenuInfantil": true,
+  "__v": 0,
+  "tipo": "comida"
+}]

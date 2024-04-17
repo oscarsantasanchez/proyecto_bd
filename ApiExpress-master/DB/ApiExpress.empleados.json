@@ -1,0 +1,400 @@
+[{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc1f"
+  },
+  "id": 1,
+  "nombre": "Juan Pérez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc20"
+  },
+  "id": 2,
+  "nombre": "María García",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc21"
+  },
+  "id": 3,
+  "nombre": "Pedro Martínez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc22"
+  },
+  "id": 4,
+  "nombre": "Laura López",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc23"
+  },
+  "id": 5,
+  "nombre": "Ana Rodríguez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc24"
+  },
+  "id": 6,
+  "nombre": "Carlos Sánchez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc25"
+  },
+  "id": 7,
+  "nombre": "Sofía Fernández",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc26"
+  },
+  "id": 8,
+  "nombre": "Pablo González",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc27"
+  },
+  "id": 9,
+  "nombre": "Elena Ruiz",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc28"
+  },
+  "id": 10,
+  "nombre": "Diego Jiménez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc29"
+  },
+  "id": 11,
+  "nombre": "Lucía Pérez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc2a"
+  },
+  "id": 12,
+  "nombre": "Mario Rodríguez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc2b"
+  },
+  "id": 13,
+  "nombre": "Carmen Martínez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc2c"
+  },
+  "id": 14,
+  "nombre": "Andrés López",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc2d"
+  },
+  "id": 15,
+  "nombre": "Raquel García",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc2e"
+  },
+  "id": 16,
+  "nombre": "Luisa Hernández",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc2f"
+  },
+  "id": 17,
+  "nombre": "Javier Díaz",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc30"
+  },
+  "id": 18,
+  "nombre": "Marina Vázquez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc31"
+  },
+  "id": 19,
+  "nombre": "Alejandro Ruiz",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc32"
+  },
+  "id": 20,
+  "nombre": "Paula Gómez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc33"
+  },
+  "id": 21,
+  "nombre": "Santiago Pérez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc34"
+  },
+  "id": 22,
+  "nombre": "Marta Fernández",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc35"
+  },
+  "id": 23,
+  "nombre": "Daniel Sánchez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc36"
+  },
+  "id": 24,
+  "nombre": "Isabel Jiménez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc37"
+  },
+  "id": 25,
+  "nombre": "Alberto González",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc38"
+  },
+  "id": 26,
+  "nombre": "Clara Martínez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc39"
+  },
+  "id": 27,
+  "nombre": "Adrián Rodríguez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc3a"
+  },
+  "id": 28,
+  "nombre": "Eva López",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc3b"
+  },
+  "id": 29,
+  "nombre": "Gonzalo Pérez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc3c"
+  },
+  "id": 30,
+  "nombre": "Natalia Sánchez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc3d"
+  },
+  "id": 31,
+  "nombre": "Fernando García",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc3e"
+  },
+  "id": 32,
+  "nombre": "Victoria Ruiz",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc3f"
+  },
+  "id": 33,
+  "nombre": "Roberto Díaz",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc40"
+  },
+  "id": 34,
+  "nombre": "Ana Vázquez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc41"
+  },
+  "id": 35,
+  "nombre": "Manuel Ruiz",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc42"
+  },
+  "id": 36,
+  "nombre": "Cristina Gómez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc43"
+  },
+  "id": 37,
+  "nombre": "Jorge Pérez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc44"
+  },
+  "id": 38,
+  "nombre": "Laura Díaz",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc45"
+  },
+  "id": 39,
+  "nombre": "Miguel López",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc46"
+  },
+  "id": 40,
+  "nombre": "Patricia Martínez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc47"
+  },
+  "id": 41,
+  "nombre": "Antonio González",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc48"
+  },
+  "id": 42,
+  "nombre": "Sara Jiménez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc49"
+  },
+  "id": 43,
+  "nombre": "Rubén Fernández",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc4a"
+  },
+  "id": 44,
+  "nombre": "Celia Sánchez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc4b"
+  },
+  "id": 45,
+  "nombre": "Marcos Pérez",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc4c"
+  },
+  "id": 46,
+  "nombre": "Elena Martínez",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc4d"
+  },
+  "id": 47,
+  "nombre": "David García",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc4e"
+  },
+  "id": 48,
+  "nombre": "Silvia Ruiz",
+  "profesion": "Químico"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc4f"
+  },
+  "id": 49,
+  "nombre": "Roberto López",
+  "profesion": "Biólogo"
+},
+{
+  "_id": {
+    "$oid": "661fb515c86eb726c41dbc50"
+  },
+  "id": 50,
+  "nombre": "Cristina Fernández",
+  "profesion": "Químico"
+}]

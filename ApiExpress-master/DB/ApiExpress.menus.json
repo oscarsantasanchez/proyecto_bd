@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "660c197115662e310a051a0f"
+  },
+  "id": 1,
+  "nombre": "Menu del Dia",
+  "precio": 15,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660c197115662e310a051a10"
+  },
+  "id": 2,
+  "nombre": "Menu Infantil",
+  "precio": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660c197115662e310a051a11"
+  },
+  "id": 3,
+  "nombre": "Plato Unico",
+  "precio": 10,
+  "__v": 0
+}]
