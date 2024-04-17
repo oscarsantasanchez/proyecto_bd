@@ -5,6 +5,18 @@ const Proveedores = require('../modules/Proveedores');
 const Pedidos = require('../modules/pedidos');
 const Mesa = require('../modules/Mesa');
 const Nosotros = require('../modules/nosotros');
+const Empleados = require('../modules/empleados'); 
+
+exports.getEmpleados = async (req, res) => {
+    try {
+        const empleados = await Empleados.find();
+        res.render('empleados', { empleados });
+    } catch (error) {
+        console.log("Problemas al renderizar la página de empleados:", error);
+        res.status(500).send("Error interno del servidor");
+    }
+}
+
 
 exports.getMenu = async (req, res) => {
     try {

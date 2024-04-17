@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        main {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #666;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .menu-item h3 {
+            margin-top: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        /* Estilos para las imágenes */
+        .employee-images {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        
+        .employee-images img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Empleados</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:3000">Inicio</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Estos son nuestros empleados en el apartado científico:</h2>
+            <p>Los biólogos y químicos desempeñan roles fundamentales en nuestra cocina, donde su experiencia y conocimientos especializados se aplican de diversas maneras:</p>
+            <ul>
+                <li><strong>Biologos:</strong> Los biólogos tienen un papel crucial en la garantía de la calidad de los alimentos, realizando análisis microbiológicos para asegurar la inocuidad y frescura de los productos. Además, pueden estar involucrados en la investigación y desarrollo de nuevos platos, explorando ingredientes naturales y sostenibles.</li>
+                <li><strong>Químicos:</strong> Los químicos aplican su comprensión de los procesos químicos en la transformación de ingredientes, asegurando la precisión en las recetas y la consistencia en los resultados. Además, pueden trabajar en el desarrollo de técnicas de conservación de alimentos y en la creación de nuevas texturas y sabores a través de la manipulación de ingredientes y reacciones químicas controladas.</li>
+            </ul>
+            
+            <!-- Ejemplo de imágenes -->
+            <div class="employee-images">
+                <img src="https://images.ecestaticos.com/GXwGk_y2QjE42_OcI6yTmIaB4pA=/106x0:886x548/992x700/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F1a2%2F807%2F642%2F1a280764295c13721218e696e7985eb2.jpg" alt="Foto de un biólogo en la cocina">
+                <img src="https://www.barcelonaculinaryhub.com/sites/bch.com/files/images/Ciencia%20y%20cocina.jpg" alt="Foto de un químico en la cocina">
+            </div>
+            
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Profesión</th>
+                </tr>
+                <% empleados.forEach(empleado=> { %>
+                    <tr>
+                        <td><%= empleado.id %></td>
+                        <td><%= empleado.nombre %></td>
+                        <td><%= empleado.profesion %></td>
+                    </tr>
+                <% }); %>
+            </table>
+        </main>
+        
+    </div>
+
+</body>
+
+</html>
