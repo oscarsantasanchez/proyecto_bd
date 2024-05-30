@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, './public'));
 
 //Conexión con MongoDB
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/ApiExpress')
+mongoose.connect('mongodb://localhost:27017/Restaurante')
   .then(() => {})
   .catch(() => {});
 
