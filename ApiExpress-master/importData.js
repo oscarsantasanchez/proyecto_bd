@@ -10,7 +10,7 @@ const Empleados = require('./modules/empleados');
 
 const dataFolder = path.resolve(__dirname, 'data');
 
-mongoose.connect('mongodb://localhost:27017/ApiExpress')
+mongoose.connect('mongodb://localhost:27017/Restaurante')
   .then(() => {
     console.log('Connected to MongoDB');
     return mongoose.connection.dropDatabase();
