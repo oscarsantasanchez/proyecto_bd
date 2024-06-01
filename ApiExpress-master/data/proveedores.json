@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d6f"
+  },
+  "nombre_proveedor": "Carnicería López",
+  "tipo_producto": "Carne",
+  "ubicacion": "Calle 1, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d70"
+  },
+  "nombre_proveedor": "Carnes Frescas S.A.",
+  "tipo_producto": "Carne",
+  "ubicacion": "Av. Principal, Ciudad",
+  "calidad_producto": "Media"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d71"
+  },
+  "nombre_proveedor": "Distribuidora Bebo",
+  "tipo_producto": "Bebidas",
+  "ubicacion": "Carretera 2, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d72"
+  },
+  "nombre_proveedor": "Bebidas Deliciosas",
+  "tipo_producto": "Bebidas",
+  "ubicacion": "Plaza Central, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d73"
+  },
+  "nombre_proveedor": "Verdulería Verde",
+  "tipo_producto": "Vegetales",
+  "ubicacion": "Calle 3, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d74"
+  },
+  "nombre_proveedor": "Hortalizas Frescas",
+  "tipo_producto": "Vegetales",
+  "ubicacion": "Calle 4, Ciudad",
+  "calidad_producto": "Media"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d75"
+  },
+  "nombre_proveedor": "Lácteos Gómez",
+  "tipo_producto": "Lácteos",
+  "ubicacion": "Av. Principal, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d76"
+  },
+  "nombre_proveedor": "Quesos Deliciosos",
+  "tipo_producto": "Lácteos",
+  "ubicacion": "Plaza del Mercado, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d77"
+  },
+  "nombre_proveedor": "Panadería Panrico",
+  "tipo_producto": "Pan",
+  "ubicacion": "Calle 5, Ciudad",
+  "calidad_producto": "Alta"
+},
+{
+  "_id": {
+    "$oid": "66154f457ae01919fb857d78"
+  },
+  "nombre_proveedor": "Bollería Express",
+  "tipo_producto": "Pan",
+  "ubicacion": "Av. Central, Ciudad",
+  "calidad_producto": "Media"
+}]

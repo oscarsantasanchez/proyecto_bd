@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Cantábrico: Restaurante de la Costa</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        main {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #666;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin-top: 0;
+        }
+
+        .restaurante-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .productos-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="restaurante-img logo" src="http://www.elcantabricocomillas.es/wp-content/uploads/2015/07/restaurante_comillas_3.jpg" alt="Restaurante El Cantábrico" style="width: 30%;">
+            <h1 style="margin-right: 20px;">El Cantábrico: Restaurante de la Costa</h1>
+            <img class="restaurante-img logo" src="https://www.elcantabricocomillas.es/wp-content/uploads/2015/07/restaurante_comillas_5.jpg" alt="Restaurante El Cantábrico" style="width: 30%;">
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="/menu">Menú</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/mesas">Mesas</a></li>
+                <li><a href="/pedidos">Pedidos a domicilio</a></li>
+                <li><a href="/proveedores">Nuestros Proveedores</a></li>
+                <li><a href="/clientesmes">Opiniones y Valoraciones</a></li>
+            </ul>
+        </nav>
+        <main>
+
+           
+            
+
+            <section id="menu" onclick="window.location='/menu';">
+                <h2>Nuestros Menús</h2>
+                <ul>
+                    <li class="menu-item">
+                        <h3>¡Menú del día por solo 15€!</h3>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="productos" onclick="window.location='/productos';">
+                <h2>Nuestros Productos</h2>
+                <img class="productos-img" src="https://photo620x400.mnstatic.com/7600508a70fe3ec513e4366a48d0f46f/restaurante-el-cantabrico.jpg" alt="Productos" style="height: 230px;width: 33%;";>
+                <img class="productos-img" src="https://media-cdn.tripadvisor.com/media/photo-s/13/e6/96/43/img-20180725-wa0044-largejpg.jpg" alt="Productos"style="height: 230px;width: 33%;">
+                <img class="productos-img" src="https://lh5.googleusercontent.com/p/AF1QipOIsxwzq2vysfY1Jq7yXqT0OIBvf8J9wxbXM1XF" alt="Productos"style="height: 230px;width: 33%;">
+            </section>
+
+            <section id="mesas" onclick="window.location='/mesas';">
+                <h2>Nuestras Mesas</h2>
+                <!-- Aquí puedes mostrar información sobre las mesas de tu restaurante -->
+            </section>
+
+            <section id="Proveedores" onclick="window.location='/proveedores';">
+                <h2>Nuestros Proveedores</h2>
+                <p>Pincha aquí para ver nuestros proveedores</p>
+                <!-- Aquí puedes mostrar información sobre las mesas de tu restaurante -->
+            </section>
+
+            <section id="clientes-mes" onclick="window.location='/clientesmes';">
+                <h2>Opiniones y Valoraciones</h2>
+                <p>¡Felicidades a nuestros clientes destacados!</p>
+                <!-- Aquí puedes listar los clientes destacados del mes -->
+            </section>
+
+            <section id="Nosotros" onclick="window.location='/nosotros';">
+                <h2>¿Quíenes Somos?</h2>
+                <p>Pinchando aquí nos puede conocer y saber de nosotros</p>
+                <!-- Aquí puedes mostrar información sobre las mesas de tu restaurante -->
+            </section>
+            
+            <section id="Empleados" onclick="window.location='/empleados';">
+                <h2>Nuestros trabajadores</h2>
+                <p>Innovadores</p>
+                <!-- Aquí puedes mostrar información sobre las mesas de tu restaurante -->
+            </section>
+
+            
+        </main>
+    </div>
+</body>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        main {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #666;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin-top: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+
+        .iframe-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Clientes</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:3000">Inicio</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <h2>Estos son nuestros mejores clientes:</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Frecuencia de Visita</th>
+                </tr>
+                <% clientes.forEach(cliente=> { %>
+                <tr>
+                    <td>
+                        <%= cliente.id %>
+                    </td>
+                    <td>
+                        <%= cliente.nombre %>
+                    </td>
+                    <td>
+                        <%= cliente.telefono %>
+                    </td>
+                    <td>
+                        <%= cliente.frecuenciavisita %>
+                    </td>
+                </tr>
+                <% }); %>
+            </table>
+        </main>
+    </div>
+
+    <div id="iframe-container" class="iframe-container">
+        <iframe id="iframe-content" onload="resizeIframe()" src="./resenas"></iframe>
+    </div>
+
+</body>
+<script>
+    function resizeIframe() {
+        var iframe = document.getElementById('iframe-content');
+        var container = document.getElementById('iframe-container');
+        iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+        container.style.height = iframe.style.height;
+    }
+</script>
+
+</html>

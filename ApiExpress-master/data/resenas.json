@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "665a63a41b7754439851276e"
+  },
+  "nombre": "Alicia",
+  "comentario": "Este restaurante es simplemente excepcional en todos los sentidos. Desde el momento en que entré, me sentí bienvenido y cuidado. La comida era exquisita, con una variedad de sabores que me dejaron impresionado en cada bocado. El servicio fue impecable, con un personal amable y atento que hizo que mi experiencia fuera aún más especial. El ambiente del restaurante era encantador y acogedor, lo que hizo que mi cena fuera verdaderamente inolvidable. No tengo más que elogios para este lugar, ¡definitivamente es el mejor restaurante al que he tenido el placer de ir!"
+},
+{
+  "_id": {
+    "$oid": "665a63a41b7754439851276f"
+  },
+  "nombre": "Elisa",
+  "comentario": "¡Una experiencia gastronómica excepcional! Cada plato que probé fue una obra maestra de sabor y presentación. El servicio fue impecable, con un personal amable y atento que hizo que nuestra cena fuera inolvidable. Sin duda, este restaurante se encuentra entre los mejores que he visitado y lo recomendaría a cualquiera que busque una experiencia culinaria excepcional."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512770"
+  },
+  "nombre": "Jude",
+  "comentario": "Tuve una experiencia muy agradable en este restaurante. La comida estaba deliciosa y bien presentada. El ambiente era acogedor y el servicio fue atento y amable. Disfruté mucho de mi cena y definitivamente consideraría volver en el futuro."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512771"
+  },
+  "nombre": "Vini",
+  "comentario": "Desde el momento en que entré hasta que salí, todo fue perfecto. La comida era exquisita, con una amplia variedad de sabores que deleitaron mi paladar. El servicio fue impecable, con un personal amable y profesional que se aseguró de que cada detalle estuviera cuidado. El ambiente del restaurante era encantador y acogedor. Definitivamente volveré una y otra vez."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512772"
+  },
+  "nombre": "Joselu",
+  "comentario": "Excelente comida y servicio en este restaurante. Los platos estaban bien elaborados y llenos de sabor. El personal fue profesional y cortés, y el ambiente era agradable y relajado. Sin duda, una visita que valió la pena y recomendaría este lugar a otros."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512773"
+  },
+  "nombre": "Jon",
+  "comentario": "Mi visita a este restaurante fue una experiencia mixta. Si bien el ambiente era agradable y acogedor, y el servicio era amable, la comida dejaba un poco que desear. Algunos platos estaban bien preparados y sabrosos, pero otros carecían de sabor y parecían un poco mediocres. En general, no fue una experiencia terrible, pero tampoco fue excepcional. Podría considerar volver en el futuro, pero no sería mi primera opción."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512774"
+  },
+  "nombre": "Eva",
+  "comentario": "Este restaurante es simplemente excepcional. Cada plato era una obra maestra culinaria, con sabores exquisitos y una presentación impecable. El servicio fue impecable, con un personal amable y atento que hizo que nuestra experiencia fuera aún más especial. No puedo esperar para volver y probar más delicias de este maravilloso lugar."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512775"
+  },
+  "nombre": "Ana",
+  "comentario": "Mi experiencia en este restaurante fue decepcionante. Desde el momento en que entré, noté que la atención al cliente dejaba mucho que desear. El personal parecía poco interesado en atender nuestras necesidades y nos hizo esperar mucho tiempo para ser atendidos. Una vez que finalmente llegó nuestra comida, quedamos aún más decepcionados. Los platos estaban mal preparados y carecían de sabor fresco. La presentación era descuidada y, en general, la calidad de la comida no estaba a la altura de nuestras expectativas. No volvería a este restaurante y no lo recomendaría a otros."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512776"
+  },
+  "nombre": "Sara",
+  "comentario": "Mi visita a este restaurante fue mediocre en el mejor de los casos. Aunque el ambiente era agradable, el servicio dejaba mucho que desear. El personal parecía estar distraído y poco atento a nuestras necesidades. Además, la comida era bastante ordinaria. No estaba mal, pero definitivamente no era nada memorable. En general, fue una experiencia bastante olvidable."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512777"
+  },
+  "nombre": "Luis",
+  "comentario": "Una experiencia gastronómica fantástica. Cada plato que probé fue una delicia, con sabores auténticos y frescos. El servicio fue excepcionalmente atento y el ambiente era encantador. Definitivamente uno de los mejores restaurantes en los que he estado."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512778"
+  },
+  "nombre": "Zidane",
+  "comentario": "¡Increíble! No tengo palabras para describir lo maravilloso que fue mi experiencia en este restaurante. La comida era celestial, con sabores que simplemente se deshacían en la boca. El servicio fue excepcional, con un personal amable y atento que se aseguró de que cada momento fuera perfecto. Sin duda, este restaurante se encuentra entre los mejores que he visitado y lo recomendaría a cualquiera que busque una experiencia culinaria verdaderamente extraordinaria."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b77544398512779"
+  },
+  "nombre": "Javi",
+  "comentario": "Me decepcionó bastante mi experiencia en este restaurante. Aunque el servicio fue rápido, no puedo decir lo mismo sobre la calidad de la comida. Muchos de los platos parecían carecer de sabor y frescura, y algunos incluso estaban ligeramente quemados. El ambiente del restaurante tampoco era nada especial. En resumen, esperaba mucho más y me fui sintiéndome bastante insatisfecho."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b7754439851277a"
+  },
+  "nombre": "Alex",
+  "comentario": "¡Simplemente perfecto! Desde el momento en que entré, supe que estaba en un lugar especial. La comida era sublime, cada plato una obra maestra de sabor y presentación. El servicio fue excepcionalmente atento y profesional, y el ambiente del restaurante era encantador y acogedor. No tengo más que elogios para este lugar, ¡definitivamente regresaré una y otra vez!"
+},
+{
+  "_id": {
+    "$oid": "665a63a41b7754439851277b"
+  },
+  "nombre": "Javi",
+  "comentario": "Una experiencia gastronómica excepcional. Cada plato era una explosión de sabores exquisitos, perfectamente preparados y presentados con elegancia. El servicio fue impecable, con un personal amable y atento que hizo que nuestra visita fuera inolvidable. Este restaurante sin duda se encuentra entre los mejores de la ciudad y lo recomendaría a todos los amantes de la buena comida."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b7754439851277c"
+  },
+  "nombre": "Iwaki",
+  "comentario": "¡Me encantó este restaurante! La comida era deliciosa y bien presentada, y el servicio fue impecable. El personal fue amable y servicial, y el ambiente era perfecto para una comida relajante. Definitivamente volveré en el futuro."
+},
+{
+  "_id": {
+    "$oid": "665a63a41b7754439851277d"
+  },
+  "nombre": "Fede",
+  "comentario": "¡Fantástico de principio a fin! La comida era deliciosa y el servicio fue de primera clase. Cada detalle fue cuidadosamente atendido, desde la amabilidad del personal hasta la presentación de los platos. El ambiente era encantador y relajado, lo que hizo que nuestra cena fuera aún más agradable. Definitivamente uno de los mejores restaurantes que he tenido el placer de visitar."
+}]
