@@ -2,7 +2,6 @@ const Menu = require('../modules/Menu');
 const Productos = require('../modules/Productos');
 const Clientes = require('../modules/clientes');
 const Proveedores = require('../modules/Proveedores');
-const Pedidos = require('../modules/pedidos');
 const Mesa = require('../modules/Mesa');
 const Nosotros = require('../modules/nosotros');
 const Empleados = require('../modules/empleados'); 
