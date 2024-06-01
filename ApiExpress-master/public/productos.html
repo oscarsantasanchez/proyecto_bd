@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,6 +81,7 @@
             padding: 0;
             margin: 0;
         }
+
         li {
             padding: 10px;
             background-color: #f9f9f9;
@@ -95,6 +97,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -110,12 +113,90 @@
         <main>
             <section class="menu-item">
                 <ul>
-                    <% productos.forEach(producto => { %>
-                        <li><%= producto.nombre %>: <%= producto.precio %></li>
-                    <% }); %>
+                    <% productos.forEach(producto=> { %>
+                        <li>
+                            <%= producto.nombre %>: <%= producto.precio %>
+                        </li>
+                        <% }); %>
                 </ul>
             </section>
+            <div class="container">
+                <h1>Añadir producto</h1>
+                <form id="producto">
+                    <div style="margin-bottom: 15px;">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" style="width: 100%;" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="precio">Precio:</label><br>
+                        <textarea id="precio" name="precio" rows="4" cols="50" style="width: calc(100% - 10px);"
+                            required></textarea>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="esDelDia">Es del día:</label><br>
+                        <input type="checkbox" id="esDelDia" name="esDelDia" style="width: calc(100% - 10px);" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="esPlatoUnico">Es Plato Único:</label><br>
+                        <input type="checkbox" id="esPlatoUnico" name="esPlatoUnico" style="width: calc(100% - 10px);" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="esMenuInfantil">Es Menu Infantil:</label><br>
+                        <input type="checkbox" id="esMenuInfantil" name="esMenuInfantil" style="width: calc(100% - 10px);" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="esCantabro">Es Cantabro:</label><br>
+                        <input type="checkbox" id="esCantabro" name="esCantabro" style="width: calc(100% - 10px);" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="tipo">Tipo:</label>
+                        <input type="text" id="tipo" name="tipo" style="width: 100%;" required>
+                    </div>
+                    <button type="submit" class="botonFormulario" onclick="submitProducto(event)">Añadir
+                        Producto</button>
+                </form>
+                <h2>Producto añadido</h2>
+                <ul id="productos-list"></ul>
+            </div>
         </main>
     </div>
 </body>
+<script>
+    function submitProducto(event) {
+        event.preventDefault();
+
+        const nombre = document.getElementById('nombre').value;
+        const precio = document.getElementById('precio').value;//para todaos las entradas de productos
+        const esDelDia = document.getElementById('esDelDia').checked;
+        const esPlatoUnico = document.getElementById('esPlatoUnico').checked;
+        const esMenuInfantil = document.getElementById('esMenuInfantil').checked;
+        const esCantabro = document.getElementById('esCantabro').checked;
+        const tipo = document.getElementById('tipo').value;
+
+        fetch('/productos', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ nombre, precio, esDelDia, esPlatoUnico, esMenuInfantil, esCantabro, tipo}),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Success:', data.message);
+                    const productosList = document.getElementById('productos-list');
+                    const li = document.createElement('li');
+                    li.textContent = `${data.producto.nombre}: ${data.producto.precio}`;
+                    productosList.appendChild(li);
+                    document.getElementById('producto-form').reset();
+                } else {
+                    console.error('Error:', data.message);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+</script>
+
 </html>

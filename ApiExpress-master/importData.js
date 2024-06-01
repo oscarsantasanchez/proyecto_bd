@@ -43,6 +43,10 @@ const importData = async () => {
 
     const empleadosData = JSON.parse(fs.readFileSync(path.resolve(dataFolder, 'empleados.json'), 'utf-8'));
     await Empleados.create(empleadosData.map(data => ({ ...data, _id: mongoose.Types.ObjectId(data._id['$oid']) })));
+
+    const reseñasData = JSON.parse(fs.readFileSync(path.resolve(dataFolder, 'reseñas.json'), 'utf-8'));
+    await Reseñas.create(reseñasData.map(data => ({ ...data, _id: mongoose.Types.ObjectId(data._id['$oid']) })));
+
     console.log('Datos importados exitosamente');
 
     process.exit();

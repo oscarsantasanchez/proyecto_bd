@@ -92,26 +92,41 @@
         .menu-item h3 {
             margin-top: 0;
         }
+
         table {
-        border-collapse: collapse;
-        width: 100%;
-    }
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-    th, td {
-        padding: 8px; /* Ajusta el espacio entre el contenido y el borde */
-        text-align: left;
-        border-bottom: 1px solid #ddd; /* Agrega una línea de separación entre filas */
-    }
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
 
-    tr:hover {
-        background-color: #f2f2f2; /* Cambia el color de fondo cuando pasas el mouse sobre la fila */
-    }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
 
-    th {
-        background-color: #4CAF50; /* Color de fondo para las celdas del encabezado */
-        color: white;
-    }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+
+        .iframe-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
     </style>
+
 </head>
 
 <body>
@@ -138,249 +153,37 @@
                     <th>Frecuencia de Visita</th>
                 </tr>
                 <% clientes.forEach(cliente=> { %>
-                    <tr>
-                        <td>
-                            <%= cliente.id %>
-                        </td>
-                        <td>
-                            <%= cliente.nombre %>
-                        </td>
-                        <td>
-                            <%= cliente.telefono %>
-                        </td>
-                        <td>
-                            <%= cliente.frecuenciavisita %>
-                        </td>
-
-                    </tr>
-                    <% }); %>
+                <tr>
+                    <td>
+                        <%= cliente.id %>
+                    </td>
+                    <td>
+                        <%= cliente.nombre %>
+                    </td>
+                    <td>
+                        <%= cliente.telefono %>
+                    </td>
+                    <td>
+                        <%= cliente.frecuenciavisita %>
+                    </td>
+                </tr>
+                <% }); %>
             </table>
         </main>
     </div>
 
-    <div class="container">
-        <main>
-            <h2> Reseñas por el ID:</h2>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 1:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Este restaurante es simplemente excepcional en todos los sentidos. Desde
-                el momento en que entré, me sentí bienvenido y cuidado. La comida era exquisita, con una variedad de
-                sabores que me dejaron impresionado en cada bocado. El servicio fue impecable, con un personal amable y
-                atento que hizo que mi experiencia fuera aún más especial. El ambiente del restaurante era encantador y
-                acogedor, lo que hizo que mi cena fuera verdaderamente inolvidable. No tengo más que elogios para este
-                lugar, ¡definitivamente es el mejor restaurante al que he tenido el placer de ir!"</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 2:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"¡Una experiencia gastronómica excepcional! Cada plato que probé fue una
-                obra maestra de sabor y presentación. El servicio fue impecable, con un personal amable y atento que
-                hizo que nuestra cena fuera inolvidable. Sin duda, este restaurante se encuentra entre los mejores que
-                he visitado y lo recomendaría a cualquiera que busque una experiencia culinaria excepcional."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 3:</span>
-                <span style="color: blue;">★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Tuve una experiencia muy agradable en este restaurante. La comida estaba
-                deliciosa y bien presentada. El ambiente era acogedor y el servicio fue atento y amable. Disfruté mucho
-                de mi cena y definitivamente consideraría volver en el futuro."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 4:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Desde el momento en que entré hasta que salí, todo fue perfecto. La comida
-                era exquisita, con una amplia variedad de sabores que deleitaron mi paladar. El servicio fue impecable,
-                con un personal amable y profesional que se aseguró de que cada detalle estuviera cuidado. El ambiente
-                del restaurante era encantador y acogedor. Definitivamente volveré una y otra vez."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 5:</span>
-                <span style="color: blue;">★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Excelente comida y servicio en este restaurante. Los platos estaban bien
-                elaborados y llenos de sabor. El personal fue profesional y cortés, y el ambiente era agradable y
-                relajado. Sin duda, una visita que valió la pena y recomendaría este lugar a otros."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 6:</span>
-                <span style="color: blue;">★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Mi visita a este restaurante fue una experiencia mixta. Si bien el
-                ambiente era agradable y acogedor, y el servicio era amable, la comida dejaba un poco que desear.
-                Algunos platos estaban bien preparados y sabrosos, pero otros carecían de sabor y parecían un poco
-                mediocres. En general, no fue una experiencia terrible, pero tampoco fue excepcional. Podría considerar
-                volver en el futuro, pero no sería mi primera opción."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 7:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Este restaurante es simplemente excepcional. Cada plato era una obra
-                maestra culinaria, con sabores exquisitos y una presentación impecable. El servicio fue impecable, con
-                un personal amable y atento que hizo que nuestra experiencia fuera aún más especial. No puedo esperar
-                para volver y probar más delicias de este maravilloso lugar."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 8:</span>
-                <span style="color: blue;">★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Mi experiencia en este restaurante fue decepcionante. Desde el momento en
-                que entré, noté que la atención al cliente dejaba mucho que desear. El personal parecía poco interesado
-                en atender nuestras necesidades y nos hizo esperar mucho tiempo para ser atendidos. Una vez que
-                finalmente llegó nuestra comida, quedamos aún más decepcionados. Los platos estaban mal preparados y
-                carecían de sabor fresco. La presentación era descuidada y, en general, la calidad de la comida no
-                estaba a la altura de nuestras expectativas. No volvería a este restaurante y no lo recomendaría a
-                otros."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 9:</span>
-                <span style="color: blue;">★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Mi visita a este restaurante fue mediocre en el mejor de los casos. Aunque
-                el ambiente era agradable, el servicio dejaba mucho que desear. El personal parecía estar distraído y
-                poco atento a nuestras necesidades. Además, la comida era bastante ordinaria. No estaba mal, pero
-                definitivamente no era nada memorable. En general, fue una experiencia bastante olvidable."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 10:</span>
-                <span style="color: blue;">★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Una experiencia gastronómica fantástica. Cada plato que probé fue una
-                delicia, con sabores auténticos y frescos. El servicio fue excepcionalmente atento y el ambiente era
-                encantador. Definitivamente uno de los mejores restaurantes en los que he estado."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 11:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"¡Increíble! No tengo palabras para describir lo maravilloso que fue mi
-                experiencia en este restaurante. La comida era celestial, con sabores que simplemente se deshacían en la
-                boca. El servicio fue excepcional, con un personal amable y atento que se aseguró de que cada momento
-                fuera perfecto. Sin duda, este restaurante se encuentra entre los mejores que he visitado y lo
-                recomendaría a cualquiera que busque una experiencia culinaria verdaderamente extraordinaria."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 12:</span>
-                <span style="color: blue;">★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Me decepcionó bastante mi experiencia en este restaurante. Aunque el
-                servicio fue rápido, no puedo decir lo mismo sobre la calidad de la comida. Muchos de los platos
-                parecían carecer de sabor y frescura, y algunos incluso estaban ligeramente quemados. El ambiente del
-                restaurante tampoco era nada especial. En resumen, esperaba mucho más y me fui sintiéndome bastante
-                insatisfecho."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 13:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"¡Simplemente perfecto! Desde el momento en que entré, supe que estaba en
-                un lugar especial. La comida era sublime, cada plato una obra maestra de sabor y presentación. El
-                servicio fue excepcionalmente atento y profesional, y el ambiente del restaurante era encantador y
-                acogedor. No tengo más que elogios para este lugar, ¡definitivamente regresaré una y otra vez!"</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 14:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"Una experiencia gastronómica excepcional. Cada plato era una explosión de
-                sabores exquisitos, perfectamente preparados y presentados con elegancia. El servicio fue impecable, con
-                un personal amable y atento que hizo que nuestra visita fuera inolvidable. Este restaurante sin duda se
-                encuentra entre los mejores de la ciudad y lo recomendaría a todos los amantes de la buena comida."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 15:</span>
-                <span style="color: blue;">★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"¡Me encantó este restaurante! La comida era deliciosa y bien presentada, y
-                el servicio fue impecable. El personal fue amable y servicial, y el ambiente era perfecto para una
-                comida relajante. Definitivamente volveré en el futuro."</h4>
-
-            <div style="margin-bottom: 20px;">
-                <span style="color: blue; font-weight: bold;">ID 16:</span>
-                <span style="color: blue;">★★★★★</span>
-            </div>
-            <h4 style="font-weight: normal;">"¡Fantástico de principio a fin! La comida era deliciosa y el servicio fue
-                de primera clase. Cada detalle fue cuidadosamente atendido, desde la amabilidad del personal hasta la
-                presentación de los platos. El ambiente era encantador y relajado, lo que hizo que nuestra cena fuera
-                aún más agradable. Definitivamente uno de los mejores restaurantes que he tenido el placer de visitar."
-            </h4>
+    <div id="iframe-container" class="iframe-container">
+        <iframe id="iframe-content" onload="resizeIframe()" src="./resenas"></iframe>
     </div>
-
-    <div class="container">
-        <header>
-        </header>
-    
-        <main>
-            <div class="container">
-                <h1>Registro de Reseñas</h1>
-    
-                <form id="reseña-form">
-                    <div style="margin-bottom: 15px;">
-                        <label for="id">ID:</label>
-                        <input type="text" id="id" name="id" style="width: 100%;" required>
-                    </div>
-    
-                    <div style="margin-bottom: 15px;">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" style="width: 100%;" required>
-                    </div>
-    
-                    <div style="margin-bottom: 15px;">
-                        <label for="reseña">Reseña:</label><br>
-                        <textarea id="reseña" name="reseña" rows="4" cols="50" style="width: calc(100% - 10px);" required></textarea>
-                    </div>
-    
-                    <button type="submit" style="background-color: #4CAF50; /* Green */
-                    border: none;
-                    color: white;
-                    padding: 15px 32px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    margin: 4px 2px;
-                    transition-duration: 0.4s;
-                    cursor: pointer;
-                    border-radius: 8px;">Enviar Reseña</button>
-                </form>
-    
-                <h2>Reseñas añadidas</h2>
-                <ul id="reseñas-list"></ul>
-    
-                <script>
-                    document.getElementById('reseña-form').addEventListener('submit', function (event) {
-                        event.preventDefault();
-    
-                        var id = document.getElementById('id').value;
-                        var nombre = document.getElementById('nombre').value;
-                        var reseña = document.getElementById('reseña').value;
-    
-                        var reseñaObj = {
-                            id: id,
-                            nombre: nombre,
-                            reseña: reseña
-                        };
-    
-                        var reseñasList = document.getElementById('reseñas-list');
-    
-                        var listItem = document.createElement('li');
-                        listItem.textContent = 'ID: ' + reseñaObj.id + ', Nombre: ' + reseñaObj.nombre + ', Reseña: ' + reseñaObj.reseña;
-                        reseñasList.appendChild(listItem);
-    
-                        document.getElementById('reseña-form').reset();
-                    });
-                </script>
-            </div>
-        </main>
-    </div>
-    
 
 </body>
+<script>
+    function resizeIframe() {
+        var iframe = document.getElementById('iframe-content');
+        var container = document.getElementById('iframe-container');
+        iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+        container.style.height = iframe.style.height;
+    }
+</script>
 
 </html>
