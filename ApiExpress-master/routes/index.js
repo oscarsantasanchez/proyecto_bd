@@ -9,7 +9,13 @@ module.exports = () => {
 
     router.get('/clientesmes', webController.getClientes);
 
+    router.post('/clientesmes',webController.createCliente);
+
+    router.delete('/clientesmes/:id', webController.deleteCliente);
+
     router.get('/productos', webController.getProductos);
+
+    router.post('/productos', webController.createProducto);
 
     router.get('/menu/menu-del-dia', webController.getMenuDelDia);
 
@@ -32,6 +38,14 @@ module.exports = () => {
     router.get('/proveedores/postularseproveedor', webController.getPostular);  
 
     router.get('/nosotros', webController.getNosotros);
+
+    router.get('/apiresenas', webController.getResenas);
+
+    router.post('/apiresenas', webController.createResenas);
+
+    router.get('/resenas', webController.getPresenas);
+
+    router.delete('/apiresenas/:nombre', webController.deleteResenas);
 
     return router;
 }

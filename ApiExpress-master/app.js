@@ -3,6 +3,7 @@
 var express = require('express');
 var path = require('path');
 var routes = require('./routes');
+var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var app = express();
@@ -17,6 +18,9 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/Restaurante')
   .then(() => {})
   .catch(() => {});
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //Definir rutas de la aplicación   
 app.use('/', routes());
