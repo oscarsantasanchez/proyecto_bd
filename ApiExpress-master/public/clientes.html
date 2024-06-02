@@ -125,6 +125,37 @@
             position: relative;
             overflow: hidden;
         }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
     </style>
 
 </head>
@@ -146,29 +177,43 @@
 
             <h2>Estos son nuestros mejores clientes:</h2>
             <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Telefono</th>
-                    <th>Frecuencia de Visita</th>
-                </tr>
-                <% clientes.forEach(cliente=> { %>
-                <tr>
-                    <td>
-                        <%= cliente.id %>
-                    </td>
-                    <td>
-                        <%= cliente.nombre %>
-                    </td>
-                    <td>
-                        <%= cliente.telefono %>
-                    </td>
-                    <td>
-                        <%= cliente.frecuenciavisita %>
-                    </td>
-                </tr>
-                <% }); %>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Frecuencia de Visita</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="clientes-table-body">
+                    <% clientes.forEach(cliente => { %>
+                    <tr>
+                        <td><%= cliente.id %></td>
+                        <td><%= cliente.nombre %></td>
+                        <td><%= cliente.telefono %></td>
+                        <td><%= cliente.frecuenciavisita %></td>
+                        <td><button data-id="<%= cliente.id %>" onclick="deleteCliente(this.getAttribute('data-id'))">Eliminar</button></td>
+                    </tr>
+                    <% }); %>
+                </tbody>
             </table>
+
+            <section>
+                <h2>Añadir Nuevo Cliente</h2>
+                <form id="add-client-form">
+                    <label for="id">ID</label>
+                    <input type="number" id="id" name="id" required>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="telefono">Telefono</label>
+                    <input type="number" id="telefono" name="telefono" required>
+                    <label for="frecuenciavisita">Frecuencia de Visita</label>
+                    <input type="text" id="frecuenciavisita" name="frecuenciavisita" required>
+                    <button type="submit">Añadir Cliente</button>
+                </form>
+            </section>
+
         </main>
     </div>
 
@@ -176,14 +221,61 @@
         <iframe id="iframe-content" onload="resizeIframe()" src="./resenas"></iframe>
     </div>
 
+    <script>
+        function resizeIframe() {
+            var iframe = document.getElementById('iframe-content');
+            var container = document.getElementById('iframe-container');
+            iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+            container.style.height = iframe.style.height;
+        }
+
+        document.getElementById('add-client-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const id = document.getElementById('id').value;
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const frecuenciavisita = document.getElementById('frecuenciavisita').value;
+
+            try {
+                const response = await fetch('/clientesmes', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ id, nombre, telefono, frecuenciavisita }),
+                });
+
+                if (response.ok) {
+                    alert('Cliente creado exitosamente');
+                    location.reload(); // Recargar la página para ver el nuevo cliente
+                } else {
+                    alert('Error al crear el cliente');
+                }
+            } catch (error) {
+                console.error('Error al crear el cliente:', error);
+                alert('Error al crear el cliente');
+            }
+        });
+
+        async function deleteCliente(id) {
+            try {
+                const response = await fetch(`/clientesmes/${id}`, {
+                    method: 'DELETE',
+                });
+
+                if (response.ok) {
+                    alert('Cliente eliminado exitosamente');
+                    location.reload(); // Recargar la página para ver la lista actualizada
+                } else {
+                    alert('Error al eliminar el cliente');
+                }
+            } catch (error) {
+                console.error('Error al eliminar el cliente:', error);
+                alert('Error al eliminar el cliente');
+            }
+        }
+    </script>
 </body>
-<script>
-    function resizeIframe() {
-        var iframe = document.getElementById('iframe-content');
-        var container = document.getElementById('iframe-container');
-        iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
-        container.style.height = iframe.style.height;
-    }
-</script>
 
 </html>
