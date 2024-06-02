@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -93,69 +98,89 @@
             background-color: #f44336;
         }
 
-        .botonFormulario{
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border-radius: 8px;
-    }
-    </style>
+        .botonFormulario {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 8px;
+        }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseñas</title>
+        .botonEliminar {
+            background-color: #ff0000;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .botonEliminar:hover {
+            background-color: #cc0000;
+        }
+    </style>
 </head>
+
 <body>
-    
-        <div class="container">
-            <main>
-                <h2>Reseñas:</h2>
-                <table>
+
+    <div class="container">
+        <main>
+            <h2>Reseñas:</h2>
+            <table>
+                <thead>
                     <tr>
                         <th>Nombre</th>
                         <th>Comentario</th>
+                        <th>Acciones</th>
                     </tr>
+                </thead>
+                <tbody id="resenas-table-body">
                     <% resenas.forEach(resena => { %>
-                        <tr>
-                            <td><%= resena.nombre %></td>
-                            <td><%= resena.comentario %></td>
-                        </tr>
+                    <tr>
+                        <td><%= resena.nombre %></td>
+                        <td><%= resena.comentario %></td>
+                        <td>
+                            <button class="botonEliminar" onclick="deleteResena('<%= resena.nombre %>')">Eliminar</button>
+                        </td>
+                    </tr>
                     <% }); %>
-                </table>
-            </main>
-        </div>
-    
+                </tbody>
+            </table>
+        </main>
+    </div>
 
-    
     <div class="container">
         <h1>Registro de Reseñas</h1>
-          <form id="resena-form">
-              <div style="margin-bottom: 15px;">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" style="width: 100%;" required>
-              </div>
-              <div style="margin-bottom: 15px;">
-                  <label for="comentario">Reseña:</label><br>
-                  <textarea id="comentario" name="comentario" rows="4" cols="50" style="width: calc(100% - 10px);" required></textarea>
-              </div>
-              <button type="submit" class="botonFormulario" onclick="submitResena(event)">Enviar Reseña</button>
-          </form>
-          <h2>Reseñas añadidas</h2>
-          <ul id="resenas-list"></ul>
-      </div>
+        <form id="resena-form">
+            <div style="margin-bottom: 15px;">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" style="width: 100%;" required>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="comentario">Reseña:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" style="width: calc(100% - 10px);" required></textarea>
+            </div>
+            <button type="submit" class="botonFormulario" onclick="submitResena(event)">Enviar Reseña</button>
+        </form>
+        <h2>Reseñas añadidas</h2>
+        <ul id="resenas-list"></ul>
+    </div>
 
-</body>
-<script>
-function submitResena(event) {
+    <script>
+        function submitResena(event) {
             event.preventDefault();
 
             const nombre = document.getElementById('nombre').value;
@@ -168,22 +193,42 @@ function submitResena(event) {
                 },
                 body: JSON.stringify({ nombre, comentario }),
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    console.log('Success:', data.message);
-                    const resenasList = document.getElementById('resenas-list');
-                    const li = document.createElement('li');
-                    li.textContent = `${data.resena.nombre}: ${data.resena.comentario}`;
-                    resenasList.appendChild(li);
-                    document.getElementById('resena-form').reset();
-                } else {
-                    console.error('Error:', data.message);
-                }
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        console.log('Success:', data.message);
+                        const resenasList = document.getElementById('resenas-list');
+                        const li = document.createElement('li');
+                        li.textContent = `${data.resena.nombre}: ${data.resena.comentario}`;
+                        resenasList.appendChild(li);
+                        document.getElementById('resena-form').reset();
+                    } else {
+                        console.error('Error:', data.message);
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
         }
-</script>
+
+        async function deleteResena(nombre) {
+            try {
+                const response = await fetch(`/apiresenas/${nombre}`, {
+                    method: 'DELETE',
+                });
+
+                if (response.ok) {
+                    alert('Reseña eliminada correctamente');
+                    location.reload(); // Recargar la página para ver la lista actualizada
+                } else {
+                    alert('Error al eliminar la reseña');
+                }
+            } catch (error) {
+                console.error('Error al eliminar la reseña:', error);
+                alert('Error al eliminar la reseña');
+            }
+        }
+    </script>
+</body>
+
 </html>
