@@ -3,11 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const Menu = require('./modules/Menu');
 const Productos = require('./modules/Productos');
-const Clientes = require('./modules/clientes');
+const Clientes = require('./modules/Clientes'); // ensure correct capitalization
 const Proveedores = require('./modules/Proveedores');
 const Mesa = require('./modules/Mesa');
-const Empleados = require('./modules/empleados');
-const Resenas = require('../modules/Resenas');
+const Empleados = require('./modules/Empleados'); // ensure correct capitalization
+const Resenas = require('./modules/Resenas'); // corrected path
 
 const dataFolder = path.resolve(__dirname, 'data');
 
@@ -54,5 +54,4 @@ const importData = async () => {
   } catch (err) {
     console.error(err);
   }
-  
 };
