@@ -7,6 +7,7 @@ const Clientes = require('./modules/clientes');
 const Proveedores = require('./modules/Proveedores');
 const Mesa = require('./modules/Mesa');
 const Empleados = require('./modules/empleados');
+const Resenas = require('../modules/Resenas');
 
 const dataFolder = path.resolve(__dirname, 'data');
 
@@ -44,8 +45,8 @@ const importData = async () => {
     const empleadosData = JSON.parse(fs.readFileSync(path.resolve(dataFolder, 'empleados.json'), 'utf-8'));
     await Empleados.create(empleadosData.map(data => ({ ...data, _id: mongoose.Types.ObjectId(data._id['$oid']) })));
 
-    const reseñasData = JSON.parse(fs.readFileSync(path.resolve(dataFolder, 'reseñas.json'), 'utf-8'));
-    await Reseñas.create(reseñasData.map(data => ({ ...data, _id: mongoose.Types.ObjectId(data._id['$oid']) })));
+    const resenasData = JSON.parse(fs.readFileSync(path.resolve(dataFolder, 'resenas.json'), 'utf-8'));
+    await Resenas.create(resenasData.map(data => ({ ...data, _id: mongoose.Types.ObjectId(data._id['$oid']) })));
 
     console.log('Datos importados exitosamente');
 
