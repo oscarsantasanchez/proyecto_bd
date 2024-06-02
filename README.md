@@ -4,6 +4,8 @@ Bienvenido a la API Express de El Cantábrico. Esta API es parte del sistema de 
 
 ## Requisitos previos
 - Node.js instalado en tu sistema. Puedes descargarlo desde [nodejs.org](https://nodejs.org/).
+- En el cmd empieza con el comando -> node importData
+- Luego pon el comando -> npm start
 
 ## Cómo usar
 
